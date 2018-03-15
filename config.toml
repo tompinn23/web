@@ -1,4 +1,4 @@
-baseurl = "https://example.org/"
+baseurl = "https://musing-nightingale-59f1ff.netlify.com/"
 languageCode = "en-us"
 title = "Tom's Blog"
 theme = "hugo-steam-theme"
