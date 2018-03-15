@@ -1,0 +1,11 @@
+{{define "main"}}
+  <div style="margin: 20px auto; max-width: 600px; width: 90%;">
+ <h1 id="title">{{ .Title }}</h1>
+  {{ range .Data.Pages }}
+      <div>
+      <a style="display: inline-block;"  href="{{ .Permalink }}">{{ .Title }}</a> 
+      <div style="display: inline-block;"class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+      </div>
+  {{ end }}
+  </div>
+{{end}}

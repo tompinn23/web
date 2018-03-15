@@ -1,0 +1,17 @@
+{{ define "main" }}
+    <div style="margin: 20px auto; max-width: 600px; width: 90%;">
+	{{ .Content}}
+
+	<div style="border-bottom: 1px solid #ecf0f1; border-top: 1px solid #ecf0f1;">
+	    <h1 style="color: #33cc99; text-align: center; font-weight: 300">Recent Posts </h1>
+	</div>
+    </div>
+    {{ $paginator := .Paginate .Data.Pages.ByDate.Reverse }}
+    {{ range $paginator.Pages }}
+        {{ if not .Params.hide }}
+           {{ .Render "summary" }}
+        {{ end }}
+    {{ end }}
+
+    {{ partial "pagination" . }}
+{{ end }} 
