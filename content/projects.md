@@ -8,3 +8,9 @@ hide: true
 url: "projects/"
 ---
 
+# Projects
+
+Here is a list of my ongoing projects.
+* [t-os](https://github.com/t-os)
+* [nottingham](https://github.com/tompinn23/nottingham)
+* [rl](https://github.com/tompinn23/rl)
